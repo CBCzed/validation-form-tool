@@ -1,9 +1,10 @@
 module.exports = {
-	root: true,
-  extends: ["eslint:recommended", "eslint-config-prettier"],
-	rules: {
+  root: true,
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  parser: '@babel/eslint-parser',
+  rules: {
 		'quotes': ['error', 'single'],
-    'indent': ['error', 'tab', 2,  { SwitchCase: 1 }],
+    'indent': ['error', 2],
     'eqeqeq': ['error', 'smart'],
     'func-names': ['warn', 'as-needed'], // img.onload = function () {} // need name ?
     'no-unused-vars': ['error', { args: 'none' }],
