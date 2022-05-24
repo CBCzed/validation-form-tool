@@ -45,6 +45,6 @@ export default {
   },
   // 是否包含中文
   isIncludeChinese: (str: string): boolean => {
-    return /[u4E00-u9FA5]/.test(str);
+    return /[^u4E00-u9FA5]/.test(str);
   },
 };
