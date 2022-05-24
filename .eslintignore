@@ -2,3 +2,4 @@ node_modules
 /lib
 tsconfig
 /src/__tests__
+.eslintrc.js

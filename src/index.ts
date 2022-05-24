@@ -1,7 +1,7 @@
 import validate from './validate';
-import replace from './replace';
+import replaceTool from './replace';
 
 export default {
   ...validate,
-  ...replace,
+  ...replaceTool,
 };

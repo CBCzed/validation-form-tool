@@ -8,7 +8,7 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "eslint --ext .ts src",
+    "lint": "eslint . --ext .ts src",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run lint",
     "preversion": "npm run lint",
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "@types/jest": "^27.5.1",
+    "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",

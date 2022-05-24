@@ -27,6 +27,6 @@ export default {
   // 只能输入浮点数
   onlyFloatingPoint: (value: string): string => {
     if (!value) return '';
-    return value.replace(/[^\0-9\.]/g, '');
+    return value.replace(/[^0-9.]/g, '');
   },
 };

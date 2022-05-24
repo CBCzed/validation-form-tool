@@ -1,7 +1,12 @@
 module.exports = {
   root: true,
   extends: ['eslint:recommended', 'plugin:prettier/recommended'],
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2018,
+    requireConfigFile: false,
+    sourceType: 'module',
+  },
   rules: {
 		'quotes': ['error', 'single'],
     'indent': ['error', 2],
