@@ -29,9 +29,9 @@ export default {
     if (!value) return '';
     return value.replace(/[^0-9.]/g, '');
   },
-	// 只能输入中文、数字和字母
+  // 只能输入中文、数字和字母
   onlyCnAndNumericAndLetters: (value: string): string => {
     if (!value) return '';
-    return value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5]/g, '');
+    return value.replace(/[^a-zA-Z0-9\u4E00-\u9FA5]/g, '');
   },
 };
